@@ -1,0 +1,16 @@
+<!-- inbox.fxml -->
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx/20"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.InboxController"
+            padding="10">
+  <center>
+    <ScrollPane fitToWidth="true">
+      <VBox fx:id="messagesList" spacing="10" padding="10"/>
+    </ScrollPane>
+  </center>
+</BorderPane>

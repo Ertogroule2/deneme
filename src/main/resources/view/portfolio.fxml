@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.Priority?>
+<?import javafx.scene.image.ImageView?>  
+
+<BorderPane xmlns="http://javafx.com/javafx/20"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.PortfolioController"
+            style="-fx-background-color:#eee;">
+  <top>
+    <HBox alignment="CENTER_LEFT"
+          spacing="20"
+          style="-fx-background-color:#999; -fx-padding:15;">
+      <Label text="Capital:" style="-fx-font-size:18; -fx-text-fill:white;"/>
+      <Label fx:id="capitalLabel"
+             style="-fx-font-size:24; -fx-text-fill:#c00;"/>
+      <Region HBox.hgrow="ALWAYS"/>
+      <Button text="My Profile" onAction="#goToProfile"/>
+      <ImageView fx:id="profileImage" fitWidth="40" fitHeight="40"/>
+    </HBox>
+  </top>
+
+  <center>
+    <ScrollPane fitToWidth="true" style="-fx-padding:0 15 15 15;">
+      <VBox fx:id="portfolioContainer" spacing="10"/>
+    </ScrollPane>
+  </center>
+</BorderPane>

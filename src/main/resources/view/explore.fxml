@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<BorderPane xmlns="http://javafx.com/javafx/20"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.ExploreController"
+            style="-fx-background-color:#eeeeee;">
+
+  <!-- Header -->
+  <top>
+    <Label text="Explore Cryptos"
+           style="-fx-font-size:24px; -fx-padding:15px;"/>
+  </top>
+
+  <!-- Main content -->
+  <center>
+    <VBox spacing="20" alignment="TOP_CENTER" style="-fx-padding:15;">
+
+      <!-- BTC row -->
+      <HBox spacing="20" alignment="CENTER_LEFT"
+            style="-fx-background-color:gray; -fx-padding:10; -fx-background-radius:8;">
+        <ImageView fitWidth="32" fitHeight="32">
+          <image>
+            <Image url="@/images/BTC.png"/>
+          </image>
+        </ImageView>
+        <Label text="BTC" style="-fx-text-fill:white; -fx-font-size:16;"/>
+        <Label fx:id="btcPrice" text="0.00" style="-fx-text-fill:white; -fx-font-size:16;"/>
+      </HBox>
+
+      <!-- ETH row -->
+      <HBox spacing="20" alignment="CENTER_LEFT"
+            style="-fx-background-color:gray; -fx-padding:10; -fx-background-radius:8;">
+        <ImageView fitWidth="32" fitHeight="32">
+          <image>
+            <Image url="@/images/ETH.png"/>
+          </image>
+        </ImageView>
+        <Label text="ETH" style="-fx-text-fill:white; -fx-font-size:16;"/>
+        <Label fx:id="ethPrice" text="0.00" style="-fx-text-fill:white; -fx-font-size:16;"/>
+      </HBox>
+
+    </VBox>
+  </center>
+</BorderPane>

@@ -1,0 +1,24 @@
+<!-- profile.fxml -->
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx/20"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.ProfileController"
+            padding="10">
+  <center>
+    <VBox spacing="15" alignment="CENTER">
+      <ImageView fx:id="profileImage" fitHeight="100" fitWidth="100"/>
+      <Label fx:id="usernameLabel" text="Username" style="-fx-font-size: 18px;"/>
+      <Label fx:id="balanceLabel" text="Balance: $0.00"/>
+      <Label fx:id="countryLabel" text="Country"/>
+      <Label fx:id="descriptionLabel" text="Description"/>
+      <Button text="Edit Profile" onAction="#goToEditProfile"/>
+      <ImageView fx:id="profileImageView" fitWidth="100" fitHeight="100"/>
+      <Button fx:id="changeAvatarButton" text="Change Avatar"/>
+    </VBox>
+  </center>
+</BorderPane>
