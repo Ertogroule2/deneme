@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+
+<BorderPane xmlns="http://javafx.com/javafx/20"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.MainLayoutController">
+
+  <!-- Center: injected content -->
+  <center>
+    <StackPane fx:id="contentPane"/>
+  </center>
+
+  <!-- Bottom navigation bar -->
+  <bottom>
+    <HBox fx:id="navBar"
+          spacing="40"
+          alignment="CENTER"
+          style="-fx-background-color: white; -fx-padding:10;">
+      
+        <!-- My Portfolio -->
+        <VBox alignment="CENTER" spacing="5"
+              style="-fx-cursor: hand;"
+              onMouseClicked="#showPortfolio">
+          <ImageView fitWidth="24" fitHeight="24">
+            <image><Image url="@/icons/home.png"/></image>
+          </ImageView>
+          <Label text="My Portfolio" />
+        </VBox>
+
+        <!-- Explore -->
+        <VBox alignment="CENTER" spacing="5"
+              style="-fx-cursor: hand;"
+              onMouseClicked="#showExplore">
+          <ImageView fitWidth="24" fitHeight="24">
+            <image><Image url="@/icons/search.png"/></image>
+          </ImageView>
+          <Label text="Explore" />
+        </VBox>
+
+        <!-- Friends -->
+        <VBox alignment="CENTER" spacing="5"
+              style="-fx-cursor: hand;"
+              onMouseClicked="#showFriends">
+          <ImageView fitWidth="24" fitHeight="24">
+            <image><Image url="@/icons/friends.png"/></image>
+          </ImageView>
+          <Label text="Friends" />
+        </VBox>
+
+        <!-- Leaderboards -->
+        <VBox alignment="CENTER" spacing="5"
+              style="-fx-cursor: hand;"
+              onMouseClicked="#showLeaderboards">
+          <ImageView fitWidth="24" fitHeight="24">
+            <image><Image url="@/icons/leaderboard.png"/></image>
+          </ImageView>
+          <Label text="Leaderboards" />
+        </VBox>
+
+        <!-- Inbox -->
+        <VBox alignment="CENTER" spacing="5"
+              style="-fx-cursor: hand;"
+              onMouseClicked="#showInbox">
+          <ImageView fitWidth="24" fitHeight="24">
+            <image><Image url="@/icons/inbox.png"/></image>
+          </ImageView>
+          <Label text="Inbox" />
+        </VBox>
+
+        <!-- Multiplayer -->
+        <VBox alignment="CENTER" spacing="5"
+              style="-fx-cursor: hand;"
+              onMouseClicked="#showMultiplayer">
+          <ImageView fitWidth="24" fitHeight="24">
+            <image><Image url="@/icons/multiplayer.png"/></image>
+          </ImageView>
+          <Label text="Multiplayer" />
+        </VBox>
+
+        <!-- Profile -->
+        <VBox alignment="CENTER" spacing="5"
+              style="-fx-cursor: hand;"
+              onMouseClicked="#showProfile">
+          <ImageView fitWidth="24" fitHeight="24">
+            <image><Image url="@/icons/profile.png"/></image>
+          </ImageView>
+          <Label text="Profile" />
+        </VBox>
+
+    </HBox>
+  </bottom>
+</BorderPane>

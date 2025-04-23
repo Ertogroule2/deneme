@@ -1,0 +1,21 @@
+<!-- multiplayer.fxml -->
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx/20"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controller.MultiplayerController"
+            padding="10">
+  <top>
+    <HBox alignment="CENTER_RIGHT" padding="0 0 10 0">
+      <Button text="Create Lobby" onAction="#handleCreateLobby"/>
+    </HBox>
+  </top>
+  <center>
+    <ScrollPane fitToWidth="true">
+      <VBox fx:id="lobbiesList" spacing="10" padding="10"/>
+    </ScrollPane>
+  </center>
+</BorderPane>
